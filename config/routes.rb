@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  get 'posts', to: 'posts#index'
-  get 'posts/new', to: 'posts#new'
+  # posts#indexをルートパス（ホーム）に指定。
+  root to: 'posts#index'
+
   post 'posts', to: 'posts#create'
+
 end

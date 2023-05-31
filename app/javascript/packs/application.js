@@ -7,6 +7,10 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+// require  ...指定先のファイルを読み込む。
+// 「..」  ...ファイルシステムにおいて、一つ上の階層にあることを示す。
+// 以下の場合は一階層上のmemoファイルを指定するという意味。
+require("../memo")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
